@@ -1,5 +1,7 @@
+// Link: https://leetcode.com/problems/contains-duplicate/
 package main_217_contains_duplicate
 
+// Complexity: O(n)
 func containsDuplicate(nums []int) bool {
 	numsMap := make(map[int]bool)
 	for _, num := range nums {
