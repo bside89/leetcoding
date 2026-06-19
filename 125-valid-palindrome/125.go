@@ -1,3 +1,4 @@
+// Link: https://leetcode.com/problems/valid-palindrome/
 package validpalindrome
 
 import (
@@ -5,6 +6,7 @@ import (
 	"unicode"
 )
 
+// Complexity: O(n)
 func isPalindrome(s string) bool {
 	filtered := filterString(s)
 	for i, j := 0, len(filtered)-1; i < j; i, j = i+1, j-1 {
