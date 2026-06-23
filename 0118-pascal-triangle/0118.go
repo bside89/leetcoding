@@ -1,5 +1,7 @@
+// Link: https://leetcode.com/problems/pascals-triangle
 package pascaltriangle
 
+// Complexity: O(n^2), where n == numRows
 func generate(numRows int) [][]int {
 	result := make([][]int, numRows)
 	for i := range result {
