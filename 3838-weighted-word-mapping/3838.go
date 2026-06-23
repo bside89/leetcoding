@@ -37,7 +37,7 @@ func mapWordWeights(words []string, weights []int) string {
 	for _, s := range words {
 		sum := 0
 		for _, r := range s {
-			i := int(r) - 97 // 97: character 'a' (ASCII)
+			i := int(r - 'a')
 			weight := weights[i]
 			sum += weight
 		}
