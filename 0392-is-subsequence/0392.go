@@ -4,21 +4,11 @@ package issubsequence
 // Complexity: O(n), where n = len(t)
 func isSubsequence(s string, t string) bool {
 	i, j := 0, 0
-	result := false
-	for i < len(s) {
-		result = false
-		for j < len(t) {
-			if s[i] == t[j] {
-				i++
-				j++
-				result = true
-				break
-			}
-			j++
+	for j < len(t) {
+		if i < len(s) && s[i] == t[j] {
+			i++
 		}
-		if result == false {
-			return false
-		}
+		j++
 	}
-	return true
+	return i == len(s)
 }
